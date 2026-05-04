@@ -264,7 +264,7 @@
         const assetSlug = toAssetSlug(title);
         const localPoster = `assets/posters/${assetSlug}.png`;
         const localVideoBase = "assets/videos";
-        const releaseVideoBase = "https://github.com/KalamazooWebsiteDesign/procellcrm-tutorials-page/releases/download/videos-v1";
+        const releaseVideoBase = "https://github.com/KalamazooWebsiteDesign/KwdNexus-tutorials-page/releases/download/videos-v1";
         const useLocalVideos = location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(location.hostname);
         const videoBase = useLocalVideos ? localVideoBase : releaseVideoBase;
         const localVideo = `${videoBase}/${assetSlug}.mp4`;
