@@ -1,0 +1,314 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlowFlow CRM Tutorials</title>
+  <meta name="description" content="Easily integrate, customise and start using our CRM Platform to maximise your business potential">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="https://stcdn.leadconnectorhq.com/funnel/icon/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #06a7de;
+      --text: #001427;
+      --page: #ffffff;
+      --video-bg: #050505;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: Lato, Arial, sans-serif;
+    }
+
+    main {
+      width: min(100%, 1170px);
+      margin: 0 auto;
+      padding: 44px 24px 58px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto 44px;
+      text-align: center;
+      color: var(--accent);
+    }
+
+    .intro h1,
+    .phase-title {
+      margin: 0;
+      color: var(--accent);
+      font-family: "Archivo Black", Montserrat, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.12;
+      letter-spacing: 0;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+
+    .intro h1 {
+      font-size: 50px;
+      margin-bottom: 22px;
+    }
+
+    .intro .lead {
+      margin: 0 0 30px;
+      font-family: Montserrat, Lato, Arial, sans-serif;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .intro .note {
+      margin: 0;
+      font-family: Montserrat, Lato, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+
+    .rule {
+      width: min(760px, 100%);
+      height: 2px;
+      margin: 34px auto 0;
+      background: var(--accent);
+    }
+
+    .phase {
+      margin-top: 36px;
+    }
+
+    .phase-title {
+      margin-bottom: 34px;
+      text-align: center;
+      font-size: 31px;
+    }
+
+    .tutorial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 50px 30px;
+      max-width: 930px;
+      margin: 0 auto;
+    }
+
+    .tutorial {
+      margin: 0;
+      background: var(--video-bg);
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .video-launcher,
+    .tutorial video,
+    .video-poster {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--video-bg);
+      object-fit: cover;
+    }
+
+    .video-launcher {
+      position: relative;
+      padding: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .play-icon {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      width: 76px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.58);
+      transform: translate(-50%, -50%);
+    }
+
+    .play-icon::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      border-left: 17px solid #ffffff;
+      content: "";
+      transform: translate(-38%, -50%);
+    }
+
+    .video-launcher:hover .play-icon,
+    .video-launcher:focus-visible .play-icon {
+      background: rgba(0, 0, 0, 0.72);
+    }
+
+    @media (max-width: 820px) {
+      main {
+        padding: 34px 18px 42px;
+      }
+
+      .intro h1 {
+        font-size: 38px;
+      }
+
+      .intro .lead,
+      .intro .note {
+        font-size: 18px;
+      }
+
+      .phase-title {
+        font-size: 27px;
+      }
+
+      .tutorial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .intro h1 {
+        font-size: 31px;
+      }
+
+      .intro .lead,
+      .intro .note {
+        font-size: 16px;
+      }
+
+      .phase-title {
+        font-size: 24px;
+      }
+
+      .tutorial-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Software Tutorials</h1>
+      <p class="lead">Learn how to use and setup our software!</p>
+      <p class="note">Please note: Not all features shown in these videos may apply directly to your business or the included product offerings. Some options may be paid upgrades or add-ons, as mentioned by your rep or in your platform invite email.</p>
+      <div class="rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="phase" aria-labelledby="phase-one-title">
+      <h2 class="phase-title" id="phase-one-title">Phase I - Essentials</h2>
+      <div class="tutorial-grid" id="phase-one"></div>
+    </section>
+
+    <section class="phase" aria-labelledby="phase-two-title">
+      <h2 class="phase-title" id="phase-two-title">Phase II - Advanced Tools</h2>
+      <div class="tutorial-grid" id="phase-two"></div>
+    </section>
+  </main>
+
+  <script>
+    const phases = {
+      "phase-one": [
+        "Business Profile Setup",
+        "Personal Profile Setup",
+        "Integrations",
+        "Staff Setup",
+        "Dashboard",
+        "Conversations",
+        "Calendars",
+        "Contacts",
+        "Opportunities",
+        "Marketing",
+        "Website Builder",
+        "Domain Connection",
+        "Blogs, Forms, Surveys, And Chat Widget",
+        "Reporting",
+        "Reputation"
+      ],
+      "phase-two": [
+        "Phone Number Setup",
+        "Email Setup",
+        "Payments",
+        "Automation Examples",
+        "Automation Trigger Events",
+        "Automation Action Steps",
+        "Automation Wait Steps",
+        "Automation Conditional Branches",
+        "Automation Settings",
+        "How To Use The Funnel Builder",
+        "Split Testing Funnels",
+        "Funnel Examples",
+        "Memberships",
+        "Contact Tags",
+        "Labs"
+      ]
+    };
+
+    const toAssetSlug = (title) => title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+
+    for (const [targetId, videos] of Object.entries(phases)) {
+      const grid = document.getElementById(targetId);
+
+      for (const title of videos) {
+        const assetSlug = toAssetSlug(title);
+        const localPoster = `assets/posters/${assetSlug}.png`;
+        const localVideoBase = "assets/videos";
+        const releaseVideoBase = "https://github.com/KalamazooWebsiteDesign/procellcrm-tutorials-page/releases/download/videos-v1";
+        const useLocalVideos = location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(location.hostname);
+        const videoBase = useLocalVideos ? localVideoBase : releaseVideoBase;
+        const localVideo = `${videoBase}/${assetSlug}.mp4`;
+        const figure = document.createElement("figure");
+        const launcher = document.createElement("button");
+        const poster = document.createElement("img");
+        const playIcon = document.createElement("span");
+
+        figure.className = "tutorial";
+        launcher.className = "video-launcher";
+        launcher.type = "button";
+        launcher.setAttribute("aria-label", `Play ${title}`);
+        poster.className = "video-poster";
+        poster.src = localPoster;
+        poster.alt = "";
+        poster.loading = "lazy";
+        playIcon.className = "play-icon";
+        playIcon.setAttribute("aria-hidden", "true");
+
+        launcher.append(poster, playIcon);
+        launcher.addEventListener("click", () => {
+          const player = document.createElement("video");
+          const source = document.createElement("source");
+
+          player.controls = true;
+          player.autoplay = true;
+          player.preload = "auto";
+          player.playsInline = true;
+          player.poster = localPoster;
+          player.setAttribute("aria-label", title);
+          source.src = localVideo;
+          source.type = "video/mp4";
+
+          player.append(source);
+          figure.replaceChildren(player);
+          player.focus();
+          player.play().catch(() => {});
+        });
+
+        figure.append(launcher);
+        grid.append(figure);
+      }
+    }
+  </script>
+</body>
+</html>
+
